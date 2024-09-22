@@ -6,7 +6,7 @@ import org.example.arvores.Tree;
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args) {xtxt
+    public static void main(String[] args) {
         // criando vetores
         int[] vetor30mil = gerarVetoresAleatorios(30000);
         int[] vetor60mil = gerarVetoresAleatorios(60000);
