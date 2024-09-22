@@ -1,6 +1,6 @@
 package org.example.arvores;
 
-public class AVLTree{
+public class AVLTree implements Tree{
 
     private Node root;
 
@@ -21,7 +21,7 @@ public class AVLTree{
 
     }
 
-    public boolean insert(int key) {
+    public void insert(int key) {
         if (root == null) {
             root = new Node(key, null);
         } else {
@@ -29,7 +29,7 @@ public class AVLTree{
             Node parent;
             while (true) {
                 if (n.key == key) {
-                    return false;
+                    return;
                 }
 
                 parent = n;
@@ -48,7 +48,6 @@ public class AVLTree{
                 }
             }
         }
-        return true;
     }
 
     private void delete(Node node) {
